@@ -3,7 +3,7 @@ A shiny app for selecting points by drawing a path.
 
 By simply running runDrawpath() after you loaded drawYpath with library(drawYpath), a shiny app will open; in it you can load a plotly graph
 on which you can draw path/line.  The aim of this app is to manually find trajectories in the data instead of using classical algorithms.
-The idea was from Samuel Granjeaud.
+The idea was from [Samuel Granjeaud](https://github.com/SamGG?tab=repositories).
 
 So after drawing a path on the plot, the closest points from this path will be selected and a heatmap from those points will be printed.
 
