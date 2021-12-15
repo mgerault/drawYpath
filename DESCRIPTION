@@ -1,0 +1,20 @@
+Package: drawYpath
+Type: Package
+Title: A shiny app to manually find trajectories in data.
+Version: 0.1.0
+Author: Marc-Antoine GERAULT
+Maintainer: Marc-Antoine GERAULT <marco.gerault@gmail.com>
+Description: This package contains a shiny app that allow the user to draw path on a plot thanks to plotly.
+     Then, it finds the points next to this path and plot a heatmap of those points.
+     This app can be useful when the user want to find its own trajectories, to keep a more biological view
+     than just  use an algorithm.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0),
+         shiny (>= 1.7.1),
+         plotly (>= 4.10.0),
+         ggplot2 (>= 3.3.4)
+Imports: shiny, shinydashboard, plotly, ggplot2, ggplotify, pheatmap, stringr, tidyverse
+Suggests: EBImage
+RoxygenNote: 7.1.2
