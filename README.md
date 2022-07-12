@@ -14,26 +14,26 @@ First you'll need to install [EBImage](https://bioconductor.org/packages/release
 Indeed, to avoid a slow calculation when a lot of points are print on the plotly graph, it's better to print the plotly graph of the image of the plot and not
 directly plot the data. To do so run : 
 
-*> if(!requireNamespace("BiocManager", quietly = TRUE)){*
-
-*> install.packages("BiocManager")*  
-
-*> }*
-
-*> BiocManager::install("EBImage")*  
+```c
+if(!requireNamespace("BiocManager", quietly = TRUE)){
+   install.packages("BiocManager")
+}
+BiocManager::install("EBImage")
+```
 
 Then you can install and load drawYpath by running : 
 
-*> if(!requireNamespace("devtools", quietly = TRUE)){*
+```c
+if(!requireNamespace("devtools", quietly = TRUE)){
+   install.packages("devtools") 
+}
+devtools::install_github("mgerault/drawYpath")
 
-*> install.packages("devtools")*  
-
-*> }*  
-
-*> devtools::install_github("mgerault/drawYpath")*
-
-*> library(drawYpath)*
+library(drawYpath)
+```
 
 If you want now to use the app just type :
 
-*> runDrawpath()*
+```c
+runDrawpath()
+```
